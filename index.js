@@ -1,18 +1,18 @@
 var css = document.querySelector("h3");
-var c1 = document.querySelector(".c1");
-var c2 = document.querySelector(".c2");
+var color1 = document.querySelector(".c1");
+var color2 = document.querySelector(".c2");
 var body = document.getElementById("body");
 
 function setGradient() {
     body.style.background = "linear-gradient(to right, " 
-	+ c1.value 
+	+ color1.value 
 	+ ", " 
-	+ c2.value 
+	+ color2.value 
 	+ ")";
 
     css.textContent = body.style.background + ";";
 }
 
-c1.addEventListener("input", setGradient)
+color1.addEventListener("input", setGradient)
 
-c2.addEventListener("input", setGradient)
+color2.addEventListener("input", setGradient)
